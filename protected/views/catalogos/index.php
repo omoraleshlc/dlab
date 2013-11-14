@@ -308,7 +308,7 @@ if(win.window.focus){win.window.focus();}
 
 
        <tr>
-              <td width="152" scope="col"><div align="left"><h6>Usuario</h6></div></td>
+              <td width="152" scope="col"><div align="left"><h6>Nombre del Usuario</h6></div></td>
               <td width="451" scope="col"><label> </label>
                   <div align="left">
                     <input class="form-control input-sm span2" tabindex = "1" placeholder="Usuario Solicitante" id="focusedInput" type="text" name="nombre" value=""/>
@@ -362,9 +362,19 @@ if(win.window.focus){win.window.focus();}
 
                 
                   
-              <td ><div  align="left"><small>Tipo Soporte</small><a href="#altaOrden" onClick="nueva('../ventanas/v_tipo_soporte.php?almacen=')">
+              <td ><div  align="left"><small>Tipo Usuario</small><a href="#altaOrden" onClick="nueva('../ventanas/v_tipo_soporte.php?almacen=')">
           <span data-toggle="tooltip" title="Agregar tipos de soporte.." class="glyphicon glyphicon-plus-sign small"></span>
 </a></div></td>
+
+
+<td>
+	<select name="tipoUsuario" class="form-control select">
+		<option value="">Escoje</option>
+		<option value="Administrador">Administrador</option>
+		<option value="Usuario">Usuario</option>
+		<option value="Cliente">Cliente</option>
+	</select>
+</td>
               
             </tr>
 

@@ -60,10 +60,10 @@
                     <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="./images/7day.jpeg"></link>
   
-      <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet"></link>
+      <!-- Le styles 
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">-->
+    <link href="./assets/css/docs.css" rel="stylesheet"></link>
     
 </head>
 
@@ -101,7 +101,8 @@
             <div  class="nav-collapse collapse" >
             <ul class="nav pull-right">
                 <li id="fat-menu" class="dropdown">
-             <a href="index.php?r=site/logout" id="drop3"><img height="20" src="./images/salir.jpeg" width="20"></a>
+             <a href="index.php?r=site/logout" id="drop3">
+             	<img height="20" src="./images/salir.jpeg" width="20"></a>
                 </li>
             </ul>
             </div>    

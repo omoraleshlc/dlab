@@ -8842,3 +8842,85 @@ REQUEST_URI=/dlab/index.php?r=/catalogos
 in C:\Users\eric\dlab\protected\views\catalogos\index.php (410)
 in C:\Users\eric\dlab\protected\controllers\CatalogosController.php (7)
 in C:\Users\eric\dlab\index.php (13)
+2013/11/14 04:19:01 [error] [exception.CException] exception 'CException' with message 'CatalogosController no ha podido encontrar la vista "create" solicitada.' in C:\Users\eric\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\eric\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\Users\eric\dlab\protected\controllers\CatalogosController.php(29): CController->render('create', Array)
+#2 C:\Users\eric\yii\framework\web\actions\CInlineAction.php(49): CatalogosController->actionCreate()
+#3 C:\Users\eric\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\eric\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\eric\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\eric\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#7 C:\Users\eric\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('/catalogos/crea...')
+#8 C:\Users\eric\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\eric\dlab\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dlab/index.php?r=/catalogos/create
+---
+2013/11/14 04:20:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\Users\eric\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Users\eric\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\Users\eric\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Users\eric\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Users\eric\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Users\eric\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Users\eric\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Users\eric\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\eric\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Users\eric\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#9 C:\Users\eric\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\eric\dlab\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dlab/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/dlab/index.php?r=usuarios/create
+---
+2013/11/14 04:21:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "view" solicitada.' in C:\Users\eric\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\eric\yii\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\Users\eric\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\Users\eric\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogos/view')
+#3 C:\Users\eric\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\eric\dlab\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dlab/index.php?r=catalogos/view&id=1
+---
+2013/11/14 04:22:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "crear" solicitada.' in C:\Users\eric\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\eric\yii\framework\web\CController.php(270): CController->missingAction('crear')
+#1 C:\Users\eric\yii\framework\web\CWebApplication.php(282): CController->run('crear')
+#2 C:\Users\eric\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogos/crear')
+#3 C:\Users\eric\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\eric\dlab\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dlab/index.php?r=catalogos/crear
+---
+2013/11/14 04:22:57 [error] [exception.CException] exception 'CException' with message 'CatalogosController no ha podido encontrar la vista "create" solicitada.' in C:\Users\eric\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\eric\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\Users\eric\dlab\protected\controllers\CatalogosController.php(29): CController->render('create', Array)
+#2 C:\Users\eric\yii\framework\web\actions\CInlineAction.php(49): CatalogosController->actionCrear()
+#3 C:\Users\eric\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\eric\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\eric\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\eric\yii\framework\web\CWebApplication.php(282): CController->run('crear')
+#7 C:\Users\eric\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogos/crear')
+#8 C:\Users\eric\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\eric\dlab\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dlab/index.php?r=catalogos/crear
+---
+2013/11/14 04:23:27 [error] [exception.CException] exception 'CException' with message 'CatalogosController no ha podido encontrar la vista "create" solicitada.' in C:\Users\eric\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\eric\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\Users\eric\dlab\protected\controllers\CatalogosController.php(29): CController->render('create', Array)
+#2 C:\Users\eric\yii\framework\web\actions\CInlineAction.php(49): CatalogosController->actioncrear()
+#3 C:\Users\eric\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\eric\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\eric\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\eric\yii\framework\web\CWebApplication.php(282): CController->run('crear')
+#7 C:\Users\eric\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('catalogos/crear')
+#8 C:\Users\eric\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\eric\dlab\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/dlab/index.php?r=catalogos/crear
+---

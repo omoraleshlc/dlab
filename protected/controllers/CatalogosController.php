@@ -7,6 +7,29 @@ class CatalogosController extends Controller
 		$this->render('index');
 	}
 
+
+
+public function actionCrear()
+	{
+		$model=new Usuarios;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['clientes']))
+		{
+			
+			$model->attributes=$_POST['clientes'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->folio));
+		}
+
+		$this->render('create',array(
+			'model'=>$model,
+		));
+	}
+
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

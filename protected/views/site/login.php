@@ -63,11 +63,8 @@ $this->breadcrumbs=array(
 		<?php echo $form->error($model,'password'); ?>
     </div>
 
-<div class="buttons">
-    
-    <?php echo CHtml::submitButton('LOGIN'); ?>
-    </div>
 
+<button class="btn btn-primary"><?php echo CHtml::submitButton('LOGIN'); ?></button>
     
 
 

@@ -93,12 +93,14 @@ document.getElementById(id).style.background ="";
 
 
 
-                <form name="formaCaptura" class="form" method="post"  >
-
-
-          
-
-
+ <?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'clientes-form',
+	// Please note: When you enable ajax validation, make sure the corresponding
+	// controller action is handling ajax validation correctly.
+	// There is a call to performAjaxValidation() commented in generated controller code.
+	// See class documentation of CActiveForm for details on this.
+	'enableAjaxValidation'=>false,
+)); ?>
 
 
                     
@@ -120,7 +122,7 @@ document.getElementById(id).style.background ="";
               <td width="152" scope="col"><div align="left"><h6>Usuario</h6></div></td>
               <td width="451" scope="col"><label> </label>
                   <div align="left">
-                    <input class="form-control input-sm span2" tabindex = "1" placeholder="Usuario Solicitante" id="focusedInput" type="text" name="nombre" value=""/>
+                 <input class="form-control input-sm span2" tabindex = "1" placeholder="Usuario Solicitante" id="focusedInput" type="text" name="nombreCliente" value=""/>
                 </div></td>
             </tr>
 
@@ -153,19 +155,6 @@ document.getElementById(id).style.background ="";
 
 
 
-<script>
-
-var win = null;
-function nueva(mypage,myname,w,h,scroll){
-LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
-TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
-settings =
-'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
-win = window.open(mypage,myname,settings)
-if(win.window.focus){win.window.focus();}
-}
-
-</script>
 
               <tr>
 
@@ -236,11 +225,7 @@ if(win.window.focus){win.window.focus();}
           </table>
 
 
-
-
-
-        </form>
-    
+<?php $this->endWidget(); ?>
 
 
 

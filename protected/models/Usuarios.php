@@ -24,29 +24,10 @@
  * @property string $email
  * @property string $language
  * @property string $ip
+ * @property integer $role
  */
 class Usuarios extends CActiveRecord
 {
-	/**
-	 * Returns the static model of the specified AR class.
-	 * @param string $className active record class name.
-	 * @return Usuarios the static model class
-	 */
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
-
-        
-        
-        
-        public function usuario(){
-            return $this->usuario();
-        }
-           
-         public function passwd(){
-            return $this->passwd();
-        }
 	/**
 	 * @return string the associated database table name
 	 */
@@ -63,7 +44,8 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('llave, email, language, ip', 'required'),
+			array('llave, email, language, ip, role', 'required'),
+			array('role', 'numerical', 'integerOnly'=>true),
 			array('usuario, tipoUsuario', 'length', 'max'=>15),
 			array('passwd, llave', 'length', 'max'=>200),
 			array('nombre, aPaterno, aMaterno, medico', 'length', 'max'=>20),
@@ -72,8 +54,8 @@ class Usuarios extends CActiveRecord
 			array('email', 'length', 'max'=>100),
 			array('ip', 'length', 'max'=>40),
 			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('folio, usuario, passwd, nombre, aPaterno, aMaterno, llave, ejercicio, fecha, medico, tipoUsuario, status, fechaIngreso, fechaSalida, horaIngreso, horaSalida, entidad, email, language, ip', 'safe', 'on'=>'search'),
+			// @todo Please remove those attributes that should not be searched.
+			array('folio, usuario, passwd, nombre, aPaterno, aMaterno, llave, ejercicio, fecha, medico, tipoUsuario, status, fechaIngreso, fechaSalida, horaIngreso, horaSalida, entidad, email, language, ip, role', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -114,17 +96,25 @@ class Usuarios extends CActiveRecord
 			'email' => 'Email',
 			'language' => 'Language',
 			'ip' => 'Ip',
+			'role' => 'Role',
 		);
 	}
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
-	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 *
+	 * Typical usecase:
+	 * - Initialize the model fields with values from filter form.
+	 * - Execute this method to get CActiveDataProvider instance which will filter
+	 * models according to data in model fields.
+	 * - Pass data provider to CGridView, CListView or any similar widget.
+	 *
+	 * @return CActiveDataProvider the data provider that can return the models
+	 * based on the search/filter conditions.
 	 */
 	public function search()
 	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
+		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
 
@@ -148,9 +138,21 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('language',$this->language,true);
 		$criteria->compare('ip',$this->ip,true);
+		$criteria->compare('role',$this->role);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * Please note that you should have this exact method in all your CActiveRecord descendants!
+	 * @param string $className active record class name.
+	 * @return Usuarios the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
 	}
 }

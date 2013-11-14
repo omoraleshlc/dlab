@@ -57,15 +57,15 @@
             <span class="icon-bar"></span>
           </button>
           <a class="brand" href="#" >
-          <img height="20" src="./images/healthcare.jpeg" width="20">
-          Sistema Integral Medico Adventista     
+          <img height="20" src="./images/principal.jpeg" width="20">
+          SISTEMA DE CONTROL DE LABORATORIO    
           </a>
             
             
             <div  class="nav-collapse collapse" >
             <ul class="nav pull-right">
                 <li id="fat-menu" class="dropdown">
-             <a href="./index.html" id="drop3">
+             <a href="#" id="drop3">
                  <img height="20" src="./images/salir.jpeg" width="20">
              </a>
                 </li>

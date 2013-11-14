@@ -58,7 +58,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
+                                   <link rel="shortcut icon" href="./images/7day.jpeg"></link>
   
       <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -88,9 +88,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html" >
-          <img height="20" src="./images/healthcare.jpeg" width="20"></img>
-          SIMA  
+          <a class="brand" href="#" >
+          <img height="20" src="./images/labLogo.jpg" width="20"></img>
+          SCILAB  
           </a>
             
             
@@ -114,7 +114,7 @@
                 <li id="fat-menu" class="dropdown">
                        
                         
-                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Usuario: <?php echo Yii::app()->user->name;?><b class="caret"></b></a>
+                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><small>Usuario: <?php echo Yii::app()->user->name;?><b class="caret"></b></small></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mis Permisos</a></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi Cuenta</a></li>
@@ -198,7 +198,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> Hospital La Carlota.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> PRECISLAB.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->

@@ -66,7 +66,7 @@ document.getElementById(id).style.background ="";
     
     
     <div class="registros">
-            <table class="table table-hover" size="100">
+            <table class="table table-condensed table-hover">
               <thead>
                 <tr>
                   <th></th>
@@ -117,16 +117,11 @@ while(($row4=$dataReader4->read())!==false) {
         <td>
             <div class="media">
   <a class="pull-left" href="#">
-    <img height="20" src="./images/iadmin.jpeg" width="20" class="media-object" data-src="holder.js/64x64">
-  </a>
-  <div class="media-body">
-    <?php print $row4["name"].'   ';?> <a href="<?php print $row4["ruta"];?>"><i class="icon-eye-open"></i></a>
     
- 
-    <!-- Nested media object -->
-    <div class="media">
-      <?php echo $row4["keyEM"];?>
-    </div>
+    <small><i class="icon-certificate"></i></small>
+  </a>
+  <div class="media-body btn-small">
+     <a href="<?php print $row4["ruta"];?>"><?php print $row4["name"].'   ';?></a>
   </div>
 </div>
         </td>            

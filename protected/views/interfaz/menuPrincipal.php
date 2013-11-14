@@ -167,7 +167,7 @@ $watermark_options  = array(
 
 <div class="barra_separadora">
      
-     <span >Módulos Generales</span>
+     <span ><small>Administración del Sistema</small></span>
      
 </div>
 
@@ -200,7 +200,7 @@ $watermark_options  = array(
               <li class="span2">
                   
                 <div id="1" class="thumbnail" onmouseover="javascript:cambiarBorde('1');" onmouseout="normal('1');">
-                  <img height="40" src="./images/iadmin.jpeg" width="40" data-src="holder.js/160x120" alt="">
+                  <img height="40" src="./images/iadmin.jpeg" width="40" data-src="holder.js/64x64" alt="">
                   <div class="caption" align="center">
                     <small>Administración</small>                
                     
@@ -210,15 +210,22 @@ $watermark_options  = array(
               </li>
                 </a>
               
+                
+                  
                <li class="span2">
                 <div id="2" class="thumbnail" onmouseover="javascript:cambiarBorde('2');" onmouseout="normal('2');">
-                  <img height="40" width="40" src="./images/icatalogos.jpeg" data-src="holder.js/160x120" alt="">
+                    <a href="index.php?r=/catalogos">
+                        <div align="center"><img height="40" width="40" src="./images/labCat.jpg" data-src="holder.js/160x120" alt=""></div>
                   <div class="caption" align="center">
                    <small>Catalogos</small>       
                    
                   </div>
+                  </a>
                 </div>
               </li>
+                
+              
+              
               <li class="span2">
                 <div id="3" class="thumbnail" onmouseover="javascript:cambiarBorde('3');" onmouseout="normal('3');">
                   <img height="40" width="40" src="./images/iconfiguracion.jpeg" data-src="holder.js/160x120" alt="">
@@ -229,16 +236,9 @@ $watermark_options  = array(
                   </div>
                 </div>
               </li>
-              <li class="span2">
-                <div id="4" class="thumbnail" onmouseover="javascript:cambiarBorde('4');" onmouseout="normal('4');">
-                  <img height="40" width="40" src="./images/ireportes.jpeg"  data-src="holder.js/160x120" alt="">
-                  <div class="caption" align="center">
-                    <small>Reportes</small>  
-                    
-                    
-                  </div>
-                </div>
-              </li>
+              
+              
+              
             </ul>
           </div>
           
@@ -254,7 +254,7 @@ $watermark_options  = array(
 
 <div class="barra_separadora">
      
-     <span >Operaciones</span>
+     <span ><small>Transacciones</small></span>
      
 </div>
 
@@ -273,7 +273,7 @@ $watermark_options  = array(
               
                 
                 <li class="span2">
-                    
+                  
                 <div id="5" class="thumbnail" onmouseover="javascript:cambiarBorde('5');" onmouseout="normal('5');">
                   <img height="40" width="40" src="./images/icaja.jpeg"  data-src="holder.js/160x120" alt="">
                   <div class="caption" align="center">
@@ -281,6 +281,7 @@ $watermark_options  = array(
                     
                   </div>
                 </div>
+              
               </li>
               
               <li class="span2">
@@ -363,7 +364,7 @@ $watermark_options  = array(
 
 <div class="barra_separadora">
      
-     <span >Pacientes</span>
+     <span ><small>Reportes</small></span>
      
 </div>
 <br>
@@ -389,7 +390,7 @@ $watermark_options  = array(
               
               
               
-              
+        
               <li class="span2">
                 <div id="13" class="thumbnail" onmouseover="javascript:cambiarBorde('13');" onmouseout="normal('13');">
                   <img height="40" width="40" src="./images/iarchivo.jpeg"  data-src="holder.js/160x120" alt="">
@@ -402,7 +403,8 @@ $watermark_options  = array(
               
               
               
-              <a href="index.php?r=/cargos">  
+              
+     
               <li class="span2">
                 <div id="14" class="thumbnail" onmouseover="javascript:cambiarBorde('14');" onmouseout="normal('14');">
                   <img height="40" src="./images/icargos.jpeg" width="40" data-src="holder.js/160x120" alt="">
@@ -412,7 +414,7 @@ $watermark_options  = array(
                   </div>
                 </div>
               </li>
-              </a>
+  
               
               
               

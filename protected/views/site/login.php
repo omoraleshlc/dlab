@@ -25,7 +25,7 @@ $this->breadcrumbs=array(
 
 
 <div class="container" align="center">
-<h4>PROPORCIONE EL USUARIO Y PASSWORD</h4>  
+<h4>PROPORCIONE EL USUARIO Y CONTRASEÑA</h4>  
 
 
 
@@ -35,8 +35,12 @@ $this->breadcrumbs=array(
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
-	),
-)); ?>
+	), 'htmlOptions'=>array(
+        'class'=>'form-control',
+    ),
+
+)
+        ); ?>
 
 	
     

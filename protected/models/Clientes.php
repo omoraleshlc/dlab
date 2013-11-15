@@ -64,16 +64,16 @@ class Clientes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('numCliente, nomCliente, ciudad, estado, telCasa, telTrabajo, responsable, nombreCorto, rfc, pais, calle, colonia, delegacion, nivel, usuario, fecha, banderaCXCT, tipoCliente, ID_CTAMAYOR, baseParticular, plazoPago, contraRecibo, subCliente, clientePrincipal, tipo, pagoEfectivo, credenciales, razonSocial, convenioExclusivo, gpoProducto, requiereExpediente, requiereMatricula, saldoInicial, facturacionPreconfigurada, permiteReferidos', 'required'),
+			array('numCliente, nomCliente, ciudad, estado, telCasa, telTrabajo, responsable, nombreCorto, rfc, pais, calle, colonia', 'required'),
 			array('numCliente', 'length', 'max'=>50),
 			array('ciudad', 'length', 'max'=>200),
 			array('estado, gpoProducto', 'length', 'max'=>30),
-			array('cp, telCasa, telTrabajo, responsable, nombreCorto, rfc, pais, calle, colonia, delegacion, nivel, ID_AUXILIAR, usuario, fecha, banderaCXCT, tipoCliente, ID_CTAMAYOR, entidad, clientePrincipal, tipo, razonSocial, razonSocial1', 'length', 'max'=>255),
-			array('baseParticular, contraRecibo, subCliente, pagoEfectivo, credenciales, convenioExclusivo, cargoNomina, requiereExpediente, requiereMatricula, facturacionPreconfigurada, permiteReferidos', 'length', 'max'=>2),
+			array('cp, telCasa, telTrabajo, responsable, nombreCorto, rfc, pais, calle, colonia, delegacion, tipo, razonSocial, razonSocial1', 'length', 'max'=>255),
+			
 			array('plazoPago, saldoInicial', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('keyClientes, numCliente, nomCliente, ciudad, estado, cp, telCasa, telTrabajo, responsable, nombreCorto, rfc, pais, calle, colonia, delegacion, nivel, ID_AUXILIAR, usuario, fecha, banderaCXCT, tipoCliente, ID_CTAMAYOR, entidad, baseParticular, plazoPago, contraRecibo, subCliente, clientePrincipal, tipo, pagoEfectivo, credenciales, razonSocial, convenioExclusivo, cargoNomina, razonSocial1, gpoProducto, requiereExpediente, requiereMatricula, saldoInicial, facturacionPreconfigurada, permiteReferidos', 'safe', 'on'=>'search'),
+			array(' numCliente, nomCliente, ciudad, responsable, nombreCorto, rfc', 'safe', 'on'=>'search'),
 		);
 	}
 

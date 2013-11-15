@@ -3,6 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
+'Catálogos'=>'index.php?r=/catalogos',
 	'Usuarios',
 );
 
@@ -95,15 +96,15 @@ $myrow40['nomCliente']='Particular';
        
        
        
-      <td ><?php echo $myrow['usuario'];
-?></td>
+      <td ><small><?php echo $myrow['usuario'];
+?></small></td>
       
       
 
       
       
-       <td ><?php echo $myrow['nombre'].' '.$myrow['aPaterno'].' '.$myrow['aMaterno'];
-?></td>     
+       <td ><small><?php echo $myrow['nombre'].' '.$myrow['aPaterno'].' '.$myrow['aMaterno'];
+?></small></td>     
       
            <td ><?php echo $myrow['tipoUsuario'];
 ?></td>        
@@ -128,8 +129,8 @@ $myrow40['nomCliente']='Particular';
 
 
 <?php 
-
+/*
 $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
-)); ?>
+)); */?>

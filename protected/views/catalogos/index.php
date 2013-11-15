@@ -75,7 +75,7 @@ document.getElementById(id).style.background ="";
                 
                   
                <li class="span2">
-                <div id="2" class="thumbnail" onmouseover="javascript:cambiarBorde('2');" onmouseout="normal('2');">
+                <div id="2" class="thumbnail" onmouseover="javascript:cambiarBorde('3');" onmouseout="normal('3');">
                     <a href="index.php?r=/usuarios">
                         <div align="center"><img height="40" width="40" src="./images/labUsuarios.jpg" data-src="holder.js/160x120" alt=""></div>
                   <div class="caption" align="center">
@@ -85,6 +85,63 @@ document.getElementById(id).style.background ="";
                   </a>
                 </div>
               </li>
+              
+              
+                <li class="span2">
+                <div id="3" class="thumbnail" onmouseover="javascript:cambiarBorde('3');" onmouseout="normal('3');">
+                    <a href="index.php?r=/catCajas">
+                        <div align="center"><img height="38" width="38" src="./images/icaja.jpeg" data-src="holder.js/160x120" alt=""></div>
+                  <div class="caption" align="center">
+                   <small>Cajas</small>       
+                   
+                  </div>
+                  </a>
+                </div>
+              </li>
+              
+              
+              <li class="span2">
+                <div id="4" class="thumbnail" onmouseover="javascript:cambiarBorde('4');" onmouseout="normal('4');">
+                    <a href="index.php?r=/almacenes">
+                        <div align="center"><img height="38" width="38" src="./images/almacenes.jpg" data-src="holder.js/160x120" alt=""></div>
+                  <div class="caption" align="center">
+                   <small>Almacenes</small>       
+                   
+                  </div>
+                  </a>
+                </div>
+              </li>
+              
+              
+              
+                 <li class="span2">
+                <div id="5" class="thumbnail" onmouseover="javascript:cambiarBorde('5');" onmouseout="normal('5');">
+                    <a href="index.php?r=/articulos">
+                        <div align="center"><img height="38" width="38" src="./images/labArticulos.jpeg" data-src="holder.js/160x120" alt=""></div>
+                  <div class="caption" align="center">
+                   <small>Articulos</small>       
+                   
+                  </div>
+                  </a>
+                </div>
+              </li> 
+              
+              
+                               <li class="span2">
+                <div id="6" class="thumbnail" onmouseover="javascript:cambiarBorde('6');" onmouseout="normal('6');">
+                    <a href="index.php?r=/gpoproductos">
+                        <div align="center"><img height="38" width="38" src="./images/labGrupos.jpeg" data-src="holder.js/160x120" alt=""></div>
+                  <div class="caption" align="center">
+                   <small>Grupos</small>       
+                   
+                  </div>
+                  </a>
+                </div>
+              </li>           
+                        
+              
                 
           </div>
          </div>
+         
+

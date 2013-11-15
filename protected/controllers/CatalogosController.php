@@ -5,28 +5,40 @@ class CatalogosController extends Controller
 	public function actionIndex()
 	{
 		$this->render('index');
+		if(isset($_POST['generaOrden']))
+		{
+		
+$model=new LoginForm;
+if(isset($_POST['LoginForm']))
+    $model->attributes=$_POST['LoginForm'];
+
+		}
 	}
+   
+        
 
 
 
 public function actionCrear()
 	{
-		$model=new Usuarios;
+		//$model=new Usuarios;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		//$this->redirect(array('view','id'=>$model->folio));
 		if(isset($_POST['clientes']))
 		{
 			
-			$model->attributes=$_POST['clientes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->folio));
+			//$model->attributes=$_POST['clientes'];
+			//if($model->save()){
+			//	echo 'paso';
+			//}
+			
 		}
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		//$this->render('create',array(
+		//	'model'=>$model,
+		//));
 	}
 
 

@@ -48,23 +48,32 @@ $this->breadcrumbs=array(
       
 
   
-    
-    <div class="controls">
+    <table class="table table-responsive table-condensed table-hover">
+    <th>
     <?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-    </div>
-   
+    <?php echo $form->textField($model,'username'); ?>		
+    </th>
+    
+    <th>
+    	<?php echo $form->passwordField($model,'password'); ?>
+		<?php echo $form->error($model,'password'); ?>
+    
+    <?php echo $form->labelEx($model,'password'); ?>	
+    </th>
+    
+    
+    
+    
+    
  
     
-    <div class="controls">
-    <?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-    </div>
+    
+<tr>
+	<td><button class="btn btn-primary btn-mini" name="login" type="submit">LOGIN</button></td>
+	<td></td>
+</tr>
 
-
-<button class="btn btn-primary"><?php echo CHtml::submitButton('LOGIN'); ?></button>
+    </table>
     
 
 

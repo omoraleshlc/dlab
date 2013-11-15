@@ -1,15 +1,15 @@
 <?php
-/* @var $this UsuariosController */
-/* @var $model Usuarios */
+/* @var $this ClientesController */
+/* @var $model Clientes */
 
 $this->breadcrumbs=array(
-	'Usuarioses'=>array('index'),
+	'Clientes'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Usuarios', 'url'=>array('index')),
-	array('label'=>'Crear Usuarios', 'url'=>array('create')),
+	array('label'=>'List Clientes', 'url'=>array('index')),
+	array('label'=>'Create Clientes', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#usuarios-grid').yiiGridView('update', {
+	$('#clientes-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Administrar Usuarios</h1>
+<h1>Manage Clientes</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -41,32 +41,52 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'usuarios-grid',
+	'id'=>'clientes-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'folio',
-		'usuario',
-		'passwd',
-		'nombre',
-		'aPaterno',
-		'aMaterno',
+		'keyClientes',
+		'numCliente',
+		'nomCliente',
+		'ciudad',
+		'estado',
+		'cp',
 		/*
-		'llave',
-		'ejercicio',
+		'telCasa',
+		'telTrabajo',
+		'responsable',
+		'nombreCorto',
+		'rfc',
+		'pais',
+		'calle',
+		'colonia',
+		'delegacion',
+		'nivel',
+		'ID_AUXILIAR',
+		'usuario',
 		'fecha',
-		'medico',
-		'tipoUsuario',
-		'status',
-		'fechaIngreso',
-		'fechaSalida',
-		'horaIngreso',
-		'horaSalida',
+		'banderaCXCT',
+		'tipoCliente',
+		'ID_CTAMAYOR',
 		'entidad',
-		'email',
-		'language',
-		'ip',
-		'role',
+		'baseParticular',
+		'plazoPago',
+		'contraRecibo',
+		'subCliente',
+		'clientePrincipal',
+		'tipo',
+		'pagoEfectivo',
+		'credenciales',
+		'razonSocial',
+		'convenioExclusivo',
+		'cargoNomina',
+		'razonSocial1',
+		'gpoProducto',
+		'requiereExpediente',
+		'requiereMatricula',
+		'saldoInicial',
+		'facturacionPreconfigurada',
+		'permiteReferidos',
 		*/
 		array(
 			'class'=>'CButtonColumn',
